@@ -72,14 +72,17 @@ db_schema:
     - admin_ui: {width: 200}
       name: height
       type: number
+    - admin_ui: {width: 200}
+      name: n_password_failures
+      type: number
     server: full
     title: Users
 dependencies: []
-metadata: {}
-name: Clone of Fitnessd
-package_name: Fitnessd
+metadata: {logo_img: 'asset:E4A inspired by logo-small.jpg', title: SDG Game}
+name: SDG game - Clone of Fitnessd
+package_name: sdggame
 renamed: true
-runtime_options: {client_version: '2', server_spec: null, server_version: python3-full, version: 2}
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
 services:
 - client_config: {allow_remember_me: true, allow_signup: true, confirm_email: false, enable_automatically: true, remember_me_days: 365, use_email: true, use_google: true}
   server_config: {user_table: 30165}

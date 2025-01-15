@@ -35,7 +35,7 @@ components:
   type: FlowPanel
 - layout_properties: {slot: title}
   name: label_title
-  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Fitnessd.app, tooltip: '', underline: false, visible: true}
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: SDG Game, tooltip: '', underline: false, visible: true}
   type: Label
 - components:
   - event_bindings: {click: link_home_click}
