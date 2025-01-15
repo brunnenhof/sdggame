@@ -1,0 +1,96 @@
+allow_embedding: false
+correct_dependency_ids: {}
+db_schema:
+  averages:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: Gender
+      type: string
+    - admin_ui: {width: 200}
+      name: Height
+      type: number
+    - admin_ui: {width: 200}
+      name: Weight
+      type: number
+    - admin_ui: {width: 200}
+      name: Rate
+      type: number
+    server: full
+    title: Averages
+  measurements:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: User
+      target: users
+      type: link_single
+    - admin_ui: {width: 200}
+      name: RecordDate
+      type: date
+    - admin_ui: {width: 200}
+      name: CreatedDate
+      type: datetime
+    - admin_ui: {width: 200}
+      name: WeightInPounds
+      type: number
+    - admin_ui: {width: 200}
+      name: RestingHeartRate
+      type: number
+    server: full
+    title: Measurements
+  users:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    - admin_ui: {width: 100}
+      name: enabled
+      type: bool
+    - admin_ui: {width: 200}
+      name: is_pro
+      type: bool
+    - admin_ui: {width: 200}
+      name: signed_up
+      type: datetime
+    - admin_ui: {width: 200}
+      name: password_hash
+      type: string
+    - admin_ui: {width: 200}
+      name: remembered_logins
+      type: simpleObject
+    - admin_ui: {width: 200}
+      name: last_login
+      type: datetime
+    - admin_ui: {width: 200}
+      name: api_key
+      type: string
+    - admin_ui: {width: 200}
+      name: gender
+      type: string
+    - admin_ui: {width: 200}
+      name: height
+      type: number
+    server: full
+    title: Users
+dependencies: []
+metadata: {}
+name: Clone of Fitnessd
+package_name: Fitnessd
+renamed: true
+runtime_options: {client_version: '2', server_spec: null, server_version: python3-full, version: 1}
+services:
+- client_config: {allow_remember_me: true, allow_signup: true, confirm_email: false, enable_automatically: true, remember_me_days: 365, use_email: true, use_google: true}
+  server_config: {user_table: 30165}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/google.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/stripe.yml
+startup_form: HomeForm

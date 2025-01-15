@@ -1,0 +1,62 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'MDXZHK,GXYWHZ'}
+    name: column_panel_content
+    properties: {}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - event_bindings: {click: link_account_click}
+    layout_properties: {}
+    name: link_account
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Account, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_logout_click}
+    layout_properties: {}
+    name: link_logout
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Logout, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_register_click}
+    layout_properties: {}
+    name: link_register
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Register, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_login_click}
+    layout_properties: {}
+    name: link_login
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Login, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_title
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Fitnessd.app, tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - event_bindings: {click: link_home_click}
+    layout_properties: {grid_position: 'YTAWVA,ZUWSRW'}
+    name: link_home
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:home', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Home, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_add_click}
+    layout_properties: {grid_position: 'WAMBHU,AHOEGL'}
+    name: link_add
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:balance-scale', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Add, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  - event_bindings: {click: link_compare_click}
+    layout_properties: {grid_position: 'NEIDGP,LGDMJS'}
+    name: link_compare
+    properties: {align: left, background: '', bold: false, border: '', col_spacing: medium, col_widths: '', font: '', font_size: null, foreground: '', icon: 'fa:bar-chart', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Compare, tooltip: '', underline: false, url: '', visible: true, wrap_on: mobile}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate

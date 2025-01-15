@@ -1,0 +1,56 @@
+components:
+- layout_properties:
+    col_widths: {}
+    grid_position: BFCGPW,DZKSEC
+  name: label_title
+  properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 28, foreground: '', icon: 'fa:cube', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: SET HEIGHT AND GENDER, tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - layout_properties: {grid_position: 'SLJFYC,TPOULE'}
+    name: label_1
+    properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: Please enter your height (in inches) so we can compare you to our averages., tooltip: '', underline: false, visible: true}
+    type: Label
+  - layout_properties: {grid_position: 'PFVZNV,ZYVLTG'}
+    name: text_box_height
+    properties: {align: left, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', hide_text: false, italic: false, placeholder: ' Your height in inches', role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', type: text, underline: false, visible: true}
+    type: TextBox
+  - layout_properties: {grid_position: 'GANHQU,DTWOZT'}
+    name: drop_down_gender
+    properties:
+      align: full
+      background: ''
+      bold: false
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: ''
+      include_placeholder: false
+      italic: false
+      items: [Select your gender, Male, Female, '']
+      placeholder: ''
+      role: null
+      spacing_above: small
+      spacing_below: small
+      tooltip: ''
+      underline: false
+      visible: true
+    type: DropDown
+  - event_bindings: {click: button_save_click}
+    layout_properties: {grid_position: 'XXJCEL,DEJRUA'}
+    name: button_save
+    properties: {align: right, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: primary-color, spacing_above: small, spacing_below: small, text: SAVE, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {grid_position: 'QNUHOQ,CEAZXF'}
+  name: card_1
+  properties: {col_widths: '{}', role: card}
+  type: ColumnPanel
+- layout_properties:
+    col_widths: {}
+    grid_position: KBGAIZ,HNWVZW
+  name: label_error
+  properties: {align: center, background: '', bold: false, border: '', font: '', font_size: 18, foreground: '#FF0000', icon: '', icon_align: left, italic: false, role: null, spacing_above: small, spacing_below: small, text: '', tooltip: '', underline: false, visible: true}
+  type: Label
+container:
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
