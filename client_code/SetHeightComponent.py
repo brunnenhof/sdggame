@@ -1,3 +1,4 @@
+from ._anvil_designer import SetHeightComponentTemplate
 from anvil import *
 import stripe.checkout
 import data_access

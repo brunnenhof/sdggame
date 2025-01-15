@@ -1,3 +1,4 @@
+from ._anvil_designer import HomeAnonComponentTemplate
 from anvil import *
 import stripe.checkout
 import anvil.server

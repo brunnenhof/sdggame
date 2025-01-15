@@ -1,3 +1,4 @@
+from ._anvil_designer import AccountComponentTemplate
 from anvil import *
 import stripe.checkout
 import anvil.users

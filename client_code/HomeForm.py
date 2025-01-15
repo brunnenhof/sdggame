@@ -1,3 +1,4 @@
+from ._anvil_designer import HomeFormTemplate
 from anvil import *
 import stripe.checkout
 import anvil.server

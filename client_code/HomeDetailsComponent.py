@@ -1,3 +1,4 @@
+from ._anvil_designer import HomeDetailsComponentTemplate
 from anvil import *
 import stripe.checkout
 import plotly.graph_objs as go

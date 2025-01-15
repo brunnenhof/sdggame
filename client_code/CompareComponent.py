@@ -1,3 +1,4 @@
+from ._anvil_designer import CompareComponentTemplate
 from anvil import *
 import stripe.checkout
 import data_access
