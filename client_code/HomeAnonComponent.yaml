@@ -5,18 +5,25 @@ components:
   name: label_title
   properties: {align: center, background: '', bold: true, border: '', font: '', font_size: 32, foreground: '', icon: 'fa:gamepad', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Welcome to the SDG Game, tooltip: '', underline: false, visible: true}
   type: Label
-- data_bindings: []
-  layout_properties: {grid_position: 'SFZXIM,PBDLQW'}
-  name: image_banner
-  properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 116, horizontal_align: center, role: null, source: _/theme/E4A inspired by logo-small.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
-  type: Image
+- components:
+  - data_bindings: []
+    layout_properties: {grid_position: 'QVHIGU,UTJIMG'}
+    name: image_banner
+    properties: {background: '', border: '', display_mode: shrink_to_fit, foreground: '', height: 116, horizontal_align: center, role: null, source: _/theme/E4A inspired by logo-small.jpg, spacing_above: small, spacing_below: small, tooltip: '', vertical_align: center, visible: true}
+    type: Image
+  layout_properties: {grid_position: 'GXLNDM,MDRDMU'}
+  name: link_to_e4a
+  properties: {url: 'https://earth4all.life/'}
+  type: Link
 - components:
   - data_bindings: []
     layout_properties: {grid_position: 'NUYYYN,DTKSVA'}
     name: new_game
     properties:
       align: center
+      background: '#D9365E'
       bold: true
+      foreground: white
       spacing:
         margin: [null, 0, null, null]
         padding: [null, '16', null, null]
@@ -25,11 +32,11 @@ components:
     type: Button
   - layout_properties: {grid_position: 'NUYYYN,ODXZKK'}
     name: button_3
-    properties: {bold: true, text: RE-start an existing game}
+    properties: {background: '#FFA421', bold: true, foreground: white, text: RE-start an existing game}
     type: Button
   - layout_properties: {grid_position: 'NUYYYN,IXMGYI'}
     name: button_2
-    properties: {bold: true, text: Join an existing Game}
+    properties: {background: '#8DC92F', bold: true, foreground: white, text: Join an existing Game}
     type: Button
   layout_properties: {grid_position: 'GNYQCE,PSYUSB'}
   name: card_1
@@ -38,7 +45,7 @@ components:
 - event_bindings: {click: button_register_click}
   layout_properties: {grid_position: 'ZBPSBS,DTJCAF'}
   name: button_register
-  properties: {align: center, background: '#ff2289', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:White', icon: '', icon_align: left, italic: false, role: primary-color, spacing_above: small, spacing_below: small, text: Click here for step-by-step instructions, tooltip: '', underline: false, visible: true}
+  properties: {align: center, background: '#00BBFF', bold: true, border: '', enabled: true, font: '', font_size: null, foreground: 'theme:White', icon: 'fa:', icon_align: left, italic: false, role: primary-color, spacing_above: small, spacing_below: small, text: Click here for step-by-step instructions, tooltip: '', underline: false, visible: true}
   type: Button
 - components:
   - components:
@@ -63,7 +70,7 @@ components:
         spacing_above: small
         spacing_below: small
         text: |
-          Wake up feeling energized
+          You'll be energized after playing it
         tooltip: ''
         underline: false
         visible: true
