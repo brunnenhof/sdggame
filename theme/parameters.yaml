@@ -1,9 +1,9 @@
 color_scheme:
   colors:
-  - {color: '#2196F3', name: Primary 500}
-  - {color: '#1976D2', name: Primary 700}
-  - {color: '#FF9800', name: Secondary 500}
-  - {color: '#F57C00', name: Secondary 700}
+  - {color: '#00BBFF', name: Primary 500}
+  - {color: '#0083b3', name: Primary 700}
+  - {color: '#FFA421', name: Secondary 500}
+  - {color: '#cc831a', name: Secondary 700}
   - {color: '#FFFFFF', name: White}
   - {color: '#FAFAFA', name: Gray 50}
   - {color: '#F5F5F5', name: Gray 100}
@@ -13,6 +13,10 @@ color_scheme:
   - {color: '#424242', name: Gray 800}
   - {color: '#212121', name: Gray 900}
   - {color: '#000000', name: Black}
+  - {color: '#D9365E', name: e4aRed}
+  - {color: '#A8A293', name: e4aGray}
+  - {color: '#8DC92F', name: e4aGreen}
+  - {color: '#F9F7F5', name: e4aLightGray}
   preset_groups:
   - name: Primary Colour
     options:
