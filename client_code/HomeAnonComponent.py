@@ -21,3 +21,7 @@ class HomeAnonComponent(HomeAnonComponentTemplate):
     user = anvil.users.signup_with_form(allow_cancel=True)
     navigation.go_home()
 
+  def new_game_show(self, **event_args):
+    """This method is called when the Button is shown on the screen"""
+    pass
+

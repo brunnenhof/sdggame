@@ -175,9 +175,11 @@ roles:
   display_in_toolbox: true
   name: primary-color
   title: Highlighted Button
-- components: [Button, FileLoader]
-  name: secondary-color
+- {components: null, name: secondary-color}
 - components: [TextBox]
   name: dense
 - components: [Link]
   name: selected
+- components: [Button]
+  display_in_toolbox: false
+  name: mytooltip

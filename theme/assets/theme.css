@@ -768,3 +768,8 @@ textarea.anvil-component[disabled] {
 https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-material-design-elevations
 */
 
+.anvil-role-mytooltip {
+  font-size: 24px;
+  font-style: bold;
+  background-color: yellow;
+}
