@@ -23,5 +23,13 @@ class HomeFirst(HomeFirstTemplate):
 
   def new_game_show(self, **event_args):
     """This method is called when the Button is shown on the screen"""
+    get_games_first(self)
+    say_hello('Fidibus')
+    get_games_meta(self)
     pass
+  
+def get_games_first(self, **event_args):
+  print('in get_games_first')
+
+#get_games_first(self)
 

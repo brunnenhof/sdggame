@@ -7,16 +7,23 @@ from anvil.tables import app_tables
 import anvil.users
 import anvil.server
 
-# This is a server module. It runs on the Anvil server,
-# rather than in the user's browser.
-#
-# To allow anvil.server.call() to call functions here, we mark
-# them with @anvil.server.callable.
-# Here is an example - you can replace it with your own:
-#
-# @anvil.server.callable
-# def say_hello(name):
-#   print("Hello, " + name + "!")
-#   return 42
-#
+@anvil.server.callable
+def say_hello(name):
+  print("Hello, " + name + "!")
+  return 42
+
+@anvil.server.callable
+def get_games_meta():
+  print ('In games server def')
+  games = tables.app_tables.games.get()
+#  games = anvil.users.get_user(allow_remembered=True)
+  if not games:
+    print ('No games')
+    return None
+  print (games)
+  #if not user['height'] or not user['gender']:
+  #  raise Exception("You must set your gender and height.")
+  
+  #ave = app_tables.averages.get(Gender=user['gender'], Height=user['height'])
+  #return ave
 
