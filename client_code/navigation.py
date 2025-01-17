@@ -7,7 +7,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from AddMeasurementComponent import AddMeasurementComponent
-from HomeAnonComponent import HomeAnonComponent
+from HomeFirst import HomeFirst
 from CompareComponent import CompareComponent
 from AccountComponent import AccountComponent
 from HomeDetailsComponent import HomeDetailsComponent
@@ -43,7 +43,7 @@ def go_home():
   if user:
     form.load_component(HomeDetailsComponent())
   else:
-    form.load_component(HomeAnonComponent())
+    form.load_component(HomeFirst())
 
 def go_compare():
   set_active_nav('compare')

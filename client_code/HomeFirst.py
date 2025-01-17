@@ -1,4 +1,4 @@
-from ._anvil_designer import HomeAnonComponentTemplate
+from ._anvil_designer import HomeFirstTemplate
 from anvil import *
 import stripe.checkout
 import anvil.server
@@ -10,7 +10,7 @@ from anvil.tables import app_tables
 import anvil.users
 import navigation
 
-class HomeAnonComponent(HomeAnonComponentTemplate):
+class HomeFirst(HomeFirstTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

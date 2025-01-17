@@ -24,14 +24,24 @@ components:
       align: center
       background: '#D9365E'
       bold: true
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
       foreground: white
       icon: ''
-      role: mytooltip
+      icon_align: left
+      italic: false
+      role: null
       spacing:
         margin: [null, 0, null, null]
         padding: [null, '16', null, null]
+      spacing_above: small
+      spacing_below: small
       text: Start a new Game
       tooltip: Click here if you are the Game Master / Mistress and you want to start a New Game
+      underline: false
+      visible: true
     type: Button
   - layout_properties: {grid_position: 'NUYYYN,ODXZKK'}
     name: restart
